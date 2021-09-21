@@ -16,8 +16,6 @@ const proConfig = {
 	},
 };
 
-console.log(process.env.NODE_ENV);
-
 const pool = new Pool(
 	process.env.NODE_ENV === "production" ? proConfig : devConfig
 );
