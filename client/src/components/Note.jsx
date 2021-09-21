@@ -5,9 +5,7 @@ import axios from "axios";
 function Note({ id, title, note }) {
 	const handleClick = async () => {
 		try {
-			const deleteNote = await axios.delete(
-				`http://localhost:5000/notes/${id}`
-			);
+			const deleteNote = await axios.delete(`/notes/${id}`);
 			console.log(deleteNote);
 			window.location = "/";
 		} catch (err) {

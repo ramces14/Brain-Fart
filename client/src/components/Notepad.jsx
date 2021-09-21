@@ -8,7 +8,7 @@ function Notepad() {
 
 	const getNotes = async () => {
 		try {
-			const getNotes = await axios.get("http://localhost:5000/notes");
+			const getNotes = await axios.get("/notes");
 			console.log(getNotes.data);
 			setNotes(getNotes.data);
 		} catch (err) {
