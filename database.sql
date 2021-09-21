@@ -1,0 +1,5 @@
+CREATE TABLE Notes(
+   _id SERIAL PRIMARY KEY,
+   title VARCHAR(255),
+   note VARCHAR(255)
+);
